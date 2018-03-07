@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+100.times do 
+  backpack1 = Backpack.new(
+    size: "medium",
+    color: Faker::Color.color_name,
+    price: Faker::Number.decimal(2)
+    )
+
+  backpack1.save
+  
+end
