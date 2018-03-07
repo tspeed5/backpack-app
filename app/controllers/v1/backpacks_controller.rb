@@ -1,4 +1,4 @@
-class BackpacksController < ApplicationController
+class V1::BackpacksController < ApplicationController
 
   def backpack
     backpack1 = Backpack.first
